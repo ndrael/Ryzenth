@@ -128,7 +128,7 @@ local BannerParagraph = MainTab:Paragraph({
     Desc = "Made by ndrael\n\nPlayers currently playing this game: " .. tostring(GetGamePlayingCount()) .. "\nPlayers in this server: " .. tostring(GetServerPlayerCount()),
     Color = "Grey",
     Thumbnail = "rbxassetid://110263629662540",
-    ThumbnailSize = 400,
+    ThumbnailSize = 180,
     Locked = false,
 })
 
@@ -173,3 +173,5 @@ local SettingsTab = Window:Tab({
     Icon = "settings",
     Locked = false,
 })
+
+MainTab:Select()
