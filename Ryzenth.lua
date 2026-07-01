@@ -127,10 +127,8 @@ local BannerParagraph = MainTab:Paragraph({
     Title = "Ryzenth | Violence District",
     Desc = "Made by ndrael\n\nPlayers currently playing this game: " .. tostring(GetGamePlayingCount()) .. "\nPlayers in this server: " .. tostring(GetServerPlayerCount()),
     Color = "Grey",
-    Image = "rbxassetid://110263629662540",
-    ImageSize = 220,
-    Thumbnail = "",
-    ThumbnailSize = 80,
+    Thumbnail = "rbxassetid://110263629662540",
+    ThumbnailSize = 400,
     Locked = false,
 })
 
