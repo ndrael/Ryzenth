@@ -25,21 +25,6 @@ WindUI:AddTheme({
 
 local Window = WindUI:CreateWindow({
     Title = "Reaper Hub",
-    Icon = "rose",
-    Author = "by ndrael",
-    Theme = "Dark Blood Premium"
-})
-
--- Struktur variabel yang aman dan tidak error
-local MainTab = Window:Tab({ Title = "Main", Icon = "house", Locked = false })
-local EspTab = Window:Tab({ Title = "Esp", Icon = "eye", Locked = false })
-local CombatTab = Window:Tab({ Title = "Combat", Icon = "swords", Locked = false })
-local EventsTab = Window:Tab({ Title = "Events", Icon = "sparkles", Locked = false })
-local SettingsTab = Window:Tab({ Title = "Settings", Icon = "sliders-horizontal", Locked = false })
-
-
-local Window = WindUI:CreateWindow({
-    Title = "Reaper Hub",
     Icon = "rose", -- lucide icon. optional
     Author = "by ndrael", -- optional
     Theme = "Dark Blood Gradient"
