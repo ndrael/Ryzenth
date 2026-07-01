@@ -51,6 +51,18 @@ local Window = WindUI:CreateWindow({
     Theme = "Dark Blood Gradient"
 })
 
+Window:EditOpenButton({
+    CornerRadius = UDim.new(0, 16),
+    StrokeThickness = 2,
+    Color = ColorSequence.new(
+        Color3.fromHex("#8b0000"), -- Merah darah
+        Color3.fromHex("#260000")  -- Merah gelap
+    ),
+    OnlyMobile = false,
+    Enabled = true,
+    Draggable = true,
+})
+
 local Tab = Window:Tab({
     Title = "Main",
     Icon = "house", -- optional
