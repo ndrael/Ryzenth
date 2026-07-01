@@ -3,7 +3,6 @@ local WindUI = loadstring(game:HttpGet("https://github.com/Footagesus/WindUI/rel
 WindUI:AddTheme({
     Name = "Ryzenth",
 
-    -- === Core Colors ===
     Accent = WindUI:Gradient({
         ["0"]   = { Color = Color3.fromHex("#0f2540"), Transparency = 0 },
         ["100"] = { Color = Color3.fromHex("#050a12"), Transparency = 0 },
@@ -27,7 +26,6 @@ WindUI:AddTheme({
 
     Hover = Color3.fromHex("#e6f1ff"),
 
-    -- === Window ===
     WindowBackground = WindUI:Gradient({
         ["0"]   = { Color = Color3.fromHex("#0a1420"), Transparency = 0 },
         ["100"] = { Color = Color3.fromHex("#03060a"), Transparency = 0 },
@@ -36,38 +34,32 @@ WindUI:AddTheme({
     }),
     WindowShadow = Color3.fromHex("#000000"),
 
-    -- === Dialog ===
     DialogBackground = Color3.fromHex("#0a1420"),
     DialogBackgroundTransparency = 0,
     DialogTitle = Color3.fromHex("#e6f1ff"),
     DialogContent = Color3.fromHex("#a9c6de"),
     DialogIcon = Color3.fromHex("#4fa3d1"),
 
-    -- === Topbar ===
     WindowTopbarButtonIcon = Color3.fromHex("#4fa3d1"),
     WindowTopbarTitle = Color3.fromHex("#e6f1ff"),
     WindowTopbarAuthor = Color3.fromHex("#5a7893"),
     WindowTopbarIcon = Color3.fromHex("#4fa3d1"),
 
-    -- === Tabs ===
     TabBackground = Color3.fromHex("#0f2540"),
     TabTitle = Color3.fromHex("#e6f1ff"),
     TabIcon = Color3.fromHex("#4fa3d1"),
 
-    -- === Elements ===
     ElementBackground = Color3.fromHex("#0d1e33"),
     ElementTitle = Color3.fromHex("#e6f1ff"),
     ElementDesc = Color3.fromHex("#5a7893"),
     ElementIcon = Color3.fromHex("#4fa3d1"),
 
-    -- === Popup ===
     PopupBackground = Color3.fromHex("#0a1420"),
     PopupBackgroundTransparency = 0,
     PopupTitle = Color3.fromHex("#e6f1ff"),
     PopupContent = Color3.fromHex("#a9c6de"),
     PopupIcon = Color3.fromHex("#4fa3d1"),
 
-    -- === Toggle ===
     Toggle = Color3.fromHex("#123a5e"),
     ToggleBar = WindUI:Gradient({
         ["0"]   = { Color = Color3.fromHex("#4fa3d1"), Transparency = 0 },
@@ -76,11 +68,9 @@ WindUI:AddTheme({
         Rotation = 0,
     }),
 
-    -- === Checkbox ===
     Checkbox = Color3.fromHex("#123a5e"),
     CheckboxIcon = Color3.fromHex("#e6f1ff"),
 
-    -- === Slider ===
     Slider = Color3.fromHex("#123a5e"),
     SliderThumb = WindUI:Gradient({
         ["0"]   = { Color = Color3.fromHex("#4fa3d1"), Transparency = 0 },
@@ -94,8 +84,8 @@ WindUI:SetTheme("Ryzenth")
 
 local Window = WindUI:CreateWindow({
     Title = "Ryzenth | Violence District",
-    Icon = "gamepad-2", -- lucide icon. optional
-    Author = "by ndrael", -- optional
+    Icon = "gamepad-2",
+    Author = "by ndrael",
     Theme = "Ryzenth"
 })
 
@@ -103,8 +93,8 @@ Window:EditOpenButton({
     CornerRadius = UDim.new(0, 16),
     StrokeThickness = 2,
     Color = ColorSequence.new(
-        Color3.fromHex("#4fa3d1"), -- Biru cerah
-        Color3.fromHex("#050a12")  -- Hitam kebiruan
+        Color3.fromHex("#4fa3d1"),
+        Color3.fromHex("#050a12")
     ),
     OnlyMobile = false,
     Enabled = true,
@@ -113,42 +103,42 @@ Window:EditOpenButton({
 
 local MainTab = Window:Tab({
     Title = "Main",
-    Icon = "house", -- optional
+    Icon = "house",
     Locked = false,
 })
 
 local EspTab = Window:Tab({
     Title = "Esp",
-    Icon = "eye", -- optional
+    Icon = "eye",
     Locked = false,
 })
 
 local AutoTab = Window:Tab({
     Title = "Auto",
-    Icon = "infinity", -- optional
+    Icon = "infinity",
     Locked = false,
 })
 
 local CombatTab = Window:Tab({
     Title = "Combat",
-    Icon = "swords", -- optional
+    Icon = "swords",
     Locked = false,
 })
 
 local EventTab = Window:Tab({
     Title = "Event",
-    Icon = "gift", -- optional
+    Icon = "gift",
     Locked = false,
 })
 
 local MiscTab = Window:Tab({
     Title = "Misc",
-    Icon = "sliders-horizontal", -- optional
+    Icon = "sliders-horizontal",
     Locked = false,
 })
 
 local SettingsTab = Window:Tab({
     Title = "Settings",
-    Icon = "settings", -- optional
+    Icon = "settings",
     Locked = false,
 })
