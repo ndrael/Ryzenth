@@ -113,6 +113,18 @@ local EspTab = Window:Tab({
     Locked = false,
 })
 
+local PlayerSection = Tab:Section({ 
+    Title = "Player Esp",
+})
+
+local Toggle = PlayerSection:Toggle({
+    Title = "Survivors Esp",
+    Value = false, -- default value
+    Callback = function(state) 
+        print("Toggle Activated" .. tostring(state))
+    end
+})
+
 local AutoTab = Window:Tab({
     Title = "Auto",
     Icon = "infinity",
