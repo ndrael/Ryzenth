@@ -1,25 +1,42 @@
 local WindUI = loadstring(game:HttpGet("https://github.com/Footagesus/WindUI/releases/latest/download/main.lua"))()
 
+local WindUI = loadstring(game:HttpGet("https://github.com/Footagesus/WindUI/releases/latest/download/main.lua"))()
+
 WindUI:AddTheme({
-    Name = "Dark Blood Gradient",
+    Name = "Dark Blood Premium",
     
-    -- Background dengan efek pudar merah darah
+    -- Background lebih gelap dengan sentuhan deep red
     Background = WindUI:Gradient({
-        ["0"] = { Color = Color3.fromHex("#140000"), Transparency = 0 },
-        ["100"] = { Color = Color3.fromHex("#050505"), Transparency = 0 },
+        ["0"] = { Color = Color3.fromHex("#0f0000"), Transparency = 0 },
+        ["100"] = { Color = Color3.fromHex("#0a0a0a"), Transparency = 0 },
+    }, { Rotation = 135 }),
+    
+    -- Accent merah darah lebih menyala (Vibrant Blood)
+    Accent = WindUI:Gradient({
+        ["0"] = { Color = Color3.fromHex("#b30000"), Transparency = 0 },
+        ["100"] = { Color = Color3.fromHex("#660000"), Transparency = 0 },
     }, { Rotation = 90 }),
     
-    -- Accent tombol merah menyala
-    Accent = WindUI:Gradient({
-        ["0"] = { Color = Color3.fromHex("#8b0000"), Transparency = 0 },
-        ["100"] = { Color = Color3.fromHex("#4a0000"), Transparency = 0 },
-    }, { Rotation = 0 }),
-    
-    Outline = Color3.fromHex("#5e0000"),
-    Text = Color3.fromHex("#ffffff"),
+    Outline = Color3.fromHex("#330000"),
+    Text = Color3.fromHex("#f0f0f0"),
     Button = Color3.fromHex("#140000"),
-    Icon = Color3.fromHex("#ff0000"),
+    Icon = Color3.fromHex("#ff3333"),
 })
+
+local Window = WindUI:CreateWindow({
+    Title = "Reaper Hub",
+    Icon = "rose",
+    Author = "by ndrael",
+    Theme = "Dark Blood Premium"
+})
+
+-- Struktur variabel yang aman dan tidak error
+local MainTab = Window:Tab({ Title = "Main", Icon = "house", Locked = false })
+local EspTab = Window:Tab({ Title = "Esp", Icon = "eye", Locked = false })
+local CombatTab = Window:Tab({ Title = "Combat", Icon = "swords", Locked = false })
+local EventsTab = Window:Tab({ Title = "Events", Icon = "sparkles", Locked = false })
+local SettingsTab = Window:Tab({ Title = "Settings", Icon = "sliders-horizontal", Locked = false })
+
 
 local Window = WindUI:CreateWindow({
     Title = "Reaper Hub",
